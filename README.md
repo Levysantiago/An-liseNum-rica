@@ -17,12 +17,12 @@ Para poder executar qualquer método, deve-se digitar pyhon3 (ou python, caso a 
 
 ### Algumas representações
 Abaixo se encontram as representações de algumas funções matemáticas que podem ser usadas no arquivo de entrada:
-> x² = pow(x, 2) ou x**2;
-> Raiz quadrada de x = sqrt(x);
-> Seno de x = sin(x);
-> Arcoseno de x = asin(x)
-> Cosseno de x = cos(x);
-> Tangente de x = tan(x);
-> Número de Euler (e) elevado a x = exp(x);
-> Log de x na base y = log(x, y);
+> x² = pow(x, 2) ou x**2;<br>
+> Raiz quadrada de x = sqrt(x);<br>
+> Seno de x = sin(x);<br>
+> Arcoseno de x = asin(x);<br>
+> Cosseno de x = cos(x);<br>
+> Tangente de x = tan(x);<br>
+> Número de Euler (e) elevado a x = exp(x);<br>
+> Log de x na base y = log(x, y);<br>
 > pi é uma constante já definida (3,1415...).
