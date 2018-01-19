@@ -1,0 +1,9 @@
+F(x) = tan(x)
+	Resultado: 6.283185307179586
+
+F(x) = sqrt(x) - 5*exp(-x)
+	Resultado: 1.4304194082221486
+
+F(x) = pow(x,5) - 500
+	Resultado: 3.6236188905493765
+

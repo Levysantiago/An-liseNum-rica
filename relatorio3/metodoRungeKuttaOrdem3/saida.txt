@@ -1,0 +1,8 @@
+
+Resultado = 575.364
+
+Resultado = 2.041
+
+Resultado = 3.219
+
+Resultado = 6.176
