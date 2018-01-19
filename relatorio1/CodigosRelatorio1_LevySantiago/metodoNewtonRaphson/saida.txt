@@ -1,9 +1,0 @@
-F(x) = 4*cos(x) - exp(x)
-	Resultado: 0.9047940616723674
-
-F(x) = pow(x,5) - 500
-	Resultado: 3.465764664555722
-
-F(x) = pow(x,2) + 3*x - 2
-	Resultado: 0.5615530303030303
-
