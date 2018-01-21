@@ -2,3 +2,7 @@
 Resultado = 575.363
 
 Resultado = 2.041
+
+Resultado = 3.109
+
+Resultado = 6.217
