@@ -99,7 +99,7 @@ def lerArquivo():
 
 """
 
-def metodoRungeKutta2(f, yi, intervalo, h):
+def metodoRungeKutta3(f, yi, intervalo, h):
 	xi = 0
 	k1 = k2 = k3 = f
 	while(xi < intervalo['fim']):
@@ -137,7 +137,7 @@ def main():
 		fim = lerArquivo()
 
 		#Aplicando o método
-		resultado = metodoRungeKutta2(yd, y0, intervalo, h)
+		resultado = metodoRungeKutta3(yd, y0, intervalo, h)
 
 		#Imprimindo no arquivo de saida
 		arqSaida.write("\nResultado = ")
