@@ -92,6 +92,7 @@ def lerArquivo():
 
 def metodoHeun(f, yi, intervalo, h):
 	xi = 0
+	saida = {}
 	while(xi < intervalo['fim']):
 		#Substituindo os valores de xi e yi em f
 		f_val = f.subs(x, xi)
@@ -100,6 +101,8 @@ def metodoHeun(f, yi, intervalo, h):
 		#Aplicando o método e atualizando o yi
 		yAnt = yi
 		yi = yAnt + f_val * h
+
+		xAnt = xi
 
 		#Atualizando o xi
 		xi = round(xi + h, 2)
@@ -114,10 +117,12 @@ def metodoHeun(f, yi, intervalo, h):
 		#Aplicando o método e atualizando o yi com a media
 		yi = yAnt + ((f_valAnt + f_val)/2)*h
 
-	#Aproximando o valor em 3 casas decimais
-	yi = round(yi, 3)
+		#Aproximando o valor em 3 casas decimais
+		yi = round(yi, 3)
 
-	return yi
+		saida[xAnt] = yi
+
+	return saida
 	
 
 def main():

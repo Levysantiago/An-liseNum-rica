@@ -103,6 +103,7 @@ def lerArquivo():
 def metodoRungeKutta4(f, yi, intervalo, h):
 	xi = 0
 	k1 = k2 = k3 = k4 = f
+	saida = {}
 	while(xi < intervalo['fim']):
 		#Calculando k1
 		k1_val = k1.subs(x, xi)
@@ -123,13 +124,18 @@ def metodoRungeKutta4(f, yi, intervalo, h):
 		#Atualizando o yi
 		yi = yi + (1/6)*(k1_val + 2*k2_val + 2*k3_val + k4_val)*h
 
+		#Aproximando o valor em 3 casas decimais
+		yi = round(yi, 3)
+
+		saida[xi] = yi
+
 		#Atualizando o xi
 		xi = round(xi + h, 2)
 
 	#Aproximando o valor em 3 casas decimais
 	yi = round(yi, 3)
 
-	return yi
+	return saida
 	
 
 def main():

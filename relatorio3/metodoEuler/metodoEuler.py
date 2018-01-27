@@ -92,6 +92,7 @@ def lerArquivo():
 
 def metodoEuler(f, yi, intervalo, h):
 	xi = 0
+	saida = {}
 	while(xi < intervalo['fim']):
 		#Substituindo os valores de xi e yi em f
 		f_val = f.subs(x, xi)
@@ -100,13 +101,15 @@ def metodoEuler(f, yi, intervalo, h):
 		#Aplicando o método e atualizando o yi
 		yi = yi + h * f_val
 
+		#Aproximando o valor em 3 casas decimais
+		yi = round(yi, 3)
+
+		saida[xi] = yi
+
 		#Atualizando o xi
 		xi = round(xi + h, 2)
-		
-	#Aproximando o valor em 3 casas decimais
-	yi = round(yi, 3)
 
-	return yi
+	return saida
 	
 
 def main():
